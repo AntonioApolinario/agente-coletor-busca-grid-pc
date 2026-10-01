@@ -1,0 +1,51 @@
+AGENTE COLETOR — COMO EXECUTAR NO SEU COMPUTADOR
+
+1. Baixe o arquivo agente-coletor-busca-grid-pc.zip.
+
+2. Extraia o ZIP para uma pasta do seu computador.
+
+3. Forma mais simples:
+   Abra a pasta extraída e dê dois cliques no arquivo index.html.
+   A aplicação será aberta no navegador.
+
+4. Forma recomendada usando um servidor local:
+
+   Windows:
+   - Instale o Python pelo site https://www.python.org/downloads/
+   - Durante a instalação, marque a opção "Add Python to PATH".
+   - Abra a pasta extraída.
+   - Clique na barra de endereço do Explorador de Arquivos, digite cmd e pressione Enter.
+   - No terminal, execute:
+
+     python -m http.server 8000
+
+   - Abra no navegador:
+
+     http://localhost:8000
+
+   Linux ou macOS:
+   - Abra o Terminal.
+   - Entre na pasta extraída. Exemplo:
+
+     cd caminho/para/agente-coletor-busca-grid
+
+   - Execute:
+
+     python3 -m http.server 8000
+
+   - Abra no navegador:
+
+     http://localhost:8000
+
+5. Para encerrar o servidor:
+   Volte ao terminal e pressione Ctrl+C.
+
+ARQUIVOS PRINCIPAIS
+
+index.html: estrutura da página.
+styles.css: aparência, cores, grid e responsividade.
+app.js: geração do mapa, BFS, DFS, UCS, busca Gulosa, A*, animações e movimento do agente.
+README.md: resumo do projeto.
+EXPLICACAO_CODIGO.md: explicação detalhada das funções, algoritmos e variáveis configuráveis.
+
+A aplicação não precisa de banco de dados, instalação de bibliotecas ou conexão com servidor externo para funcionar. O mapa é gerado localmente pelo navegador.
